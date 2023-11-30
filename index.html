@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digiency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <section class="bg-orange-background f-f-rubik position-relative icon-hover overflow-hidden">
+      <nav class=" bg-white d-flex align-items-center ">
+            <div class="container">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="fw-600 line-height-123 fs-2xl"><span class="color-orange ">Digi</span><span class="color-black">ency</span></div>
+                <div class="d-flex  gap-xl-215 gap-lg-50">
+                <ul class="menu d-flex gap-38 p-0 m-0">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div onclick="myFunction()"> 
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.5C12.552 6.5 13 6.053 13 5.5V3.5C13 2.947 12.552 2.5 12 2.5C11.448 2.5 11 2.947 11 3.5V5.5C11 6.053 11.448 6.5 12 6.5ZM12 14.5C10.897 14.5 10 13.603 10 12.5C10 11.397 10.897 10.5 12 10.5C13.103 10.5 14 11.397 14 12.5C14 13.603 13.103 14.5 12 14.5ZM12 8.5C9.794 8.5 8 10.294 8 12.5C8 14.706 9.794 16.5 12 16.5C14.206 16.5 16 14.706 16 12.5C16 10.294 14.206 8.5 12 8.5ZM19 11.5H21C21.552 11.5 22 11.947 22 12.5C22 13.053 21.552 13.5 21 13.5H19C18.448 13.5 18 13.053 18 12.5C18 11.947 18.448 11.5 19 11.5ZM6 12.5C6 11.947 5.552 11.5 5 11.5H3C2.448 11.5 2 11.947 2 12.5C2 13.053 2.448 13.5 3 13.5H5C5.552 13.5 6 13.053 6 12.5ZM4.8067 5.5533C5.1907 5.1573 5.8237 5.1453 6.2207 5.5283L7.6597 6.9183C8.0567 7.3013 8.0677 7.9353 7.6837 8.3323C7.4877 8.5353 7.2267 8.6373 6.9647 8.6373C6.7147 8.6373 6.4647 8.5453 6.2697 8.3573L4.8307 6.9673C4.4337 6.5843 4.4227 5.9503 4.8067 5.5533ZM17.0352 8.6377C17.2852 8.6377 17.5352 8.5447 17.7302 8.3577L19.1692 6.9677C19.5662 6.5837 19.5772 5.9497 19.1932 5.5537C18.8102 5.1577 18.1782 5.1457 17.7792 5.5287L16.3402 6.9177C15.9432 7.3017 15.9322 7.9357 16.3162 8.3317C16.5122 8.5347 16.7732 8.6377 17.0352 8.6377ZM11 19.5C11 18.947 11.448 18.5 12 18.5C12.552 18.5 13 18.947 13 19.5V21.5C13 22.053 12.552 22.5 12 22.5C11.448 22.5 11 22.053 11 21.5V19.5ZM17.73 16.6426C17.333 16.2596 16.7 16.2716 16.316 16.6676C15.932 17.0646 15.943 17.6986 16.34 18.0816L17.779 19.4716C17.974 19.6596 18.224 19.7516 18.474 19.7516C18.736 19.7516 18.997 19.6496 19.193 19.4466C19.577 19.0496 19.566 18.4156 19.169 18.0326L17.73 16.6426ZM4.831 18.0326L6.27 16.6426C6.668 16.2596 7.301 16.2716 7.684 16.6676C8.068 17.0646 8.057 17.6986 7.66 18.0816L6.221 19.4716C6.026 19.6596 5.776 19.7516 5.526 19.7516C5.264 19.7516 5.003 19.6496 4.807 19.4466C4.423 19.0496 4.434 18.4156 4.831 18.0326Z" fill="#231F20"/>
+                  <mask id="mask0_2_3841" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="21">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.5C12.552 6.5 13 6.053 13 5.5V3.5C13 2.947 12.552 2.5 12 2.5C11.448 2.5 11 2.947 11 3.5V5.5C11 6.053 11.448 6.5 12 6.5ZM12 14.5C10.897 14.5 10 13.603 10 12.5C10 11.397 10.897 10.5 12 10.5C13.103 10.5 14 11.397 14 12.5C14 13.603 13.103 14.5 12 14.5ZM12 8.5C9.794 8.5 8 10.294 8 12.5C8 14.706 9.794 16.5 12 16.5C14.206 16.5 16 14.706 16 12.5C16 10.294 14.206 8.5 12 8.5ZM19 11.5H21C21.552 11.5 22 11.947 22 12.5C22 13.053 21.552 13.5 21 13.5H19C18.448 13.5 18 13.053 18 12.5C18 11.947 18.448 11.5 19 11.5ZM6 12.5C6 11.947 5.552 11.5 5 11.5H3C2.448 11.5 2 11.947 2 12.5C2 13.053 2.448 13.5 3 13.5H5C5.552 13.5 6 13.053 6 12.5ZM4.8067 5.5533C5.1907 5.1573 5.8237 5.1453 6.2207 5.5283L7.6597 6.9183C8.0567 7.3013 8.0677 7.9353 7.6837 8.3323C7.4877 8.5353 7.2267 8.6373 6.9647 8.6373C6.7147 8.6373 6.4647 8.5453 6.2697 8.3573L4.8307 6.9673C4.4337 6.5843 4.4227 5.9503 4.8067 5.5533ZM17.0352 8.6377C17.2852 8.6377 17.5352 8.5447 17.7302 8.3577L19.1692 6.9677C19.5662 6.5837 19.5772 5.9497 19.1932 5.5537C18.8102 5.1577 18.1782 5.1457 17.7792 5.5287L16.3402 6.9177C15.9432 7.3017 15.9322 7.9357 16.3162 8.3317C16.5122 8.5347 16.7732 8.6377 17.0352 8.6377ZM11 19.5C11 18.947 11.448 18.5 12 18.5C12.552 18.5 13 18.947 13 19.5V21.5C13 22.053 12.552 22.5 12 22.5C11.448 22.5 11 22.053 11 21.5V19.5ZM17.73 16.6426C17.333 16.2596 16.7 16.2716 16.316 16.6676C15.932 17.0646 15.943 17.6986 16.34 18.0816L17.779 19.4716C17.974 19.6596 18.224 19.7516 18.474 19.7516C18.736 19.7516 18.997 19.6496 19.193 19.4466C19.577 19.0496 19.566 18.4156 19.169 18.0326L17.73 16.6426ZM4.831 18.0326L6.27 16.6426C6.668 16.2596 7.301 16.2716 7.684 16.6676C8.068 17.0646 8.057 17.6986 7.66 18.0816L6.221 19.4716C6.026 19.6596 5.776 19.7516 5.526 19.7516C5.264 19.7516 5.003 19.6496 4.807 19.4466C4.423 19.0496 4.434 18.4156 4.831 18.0326Z" fill="white"/>
+                  </mask>
+                  <g mask="url(#mask0_2_3841)">
+                  <rect y="0.5" width="24" height="24" fill="#0D1C2E"/>
+                  </g>
+                  </svg> </div>               
+              </div>
+              <div class="hamburger">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
+              </div>
+            </div>
+          </div>
+      </nav> 
+      <div class="container">
+        <div class="row flex-column-reverse flex-lg-row py-lg-153 py-5">
+          <div class="col-lg-5 col-12 text-center  text-sm-start pt-50 pt-sm-0 ">
+            <h1 class="m-0 max-w-440 line-height-123 fw-700 fs-3xl">We Are The Best
+              <span class="color-orange">Digital Agency</span> for 
+              business</h1>
+              <h6 class="m-0 pt-11 pb-50 fw-400 line-height-150 color-gray fs-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
+              <button class="btn-1 bg-orange  border-0  text-white border-radius-5 fs-md btn-hover">Contact Us</button>
+          </div>
+          <div class="col-lg-7 col-12">
+            <img src="./assets/image/Image.png" alt="hero-image" class="w-100">
+          </div>
+        </div>
+      </div>
+      <div class=" d-flex gap-1 flex-column right-position">
+        <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+          <a href=" https://www.facebook.com/" target="_blank">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27931_403)">
+              <path d="M14 14H16.5L17.5 10H14V8C14 6.97 14 6 16 6H17.5V2.64C17.174 2.597 15.943 2.5 14.643 2.5C11.928 2.5 10 4.157 10 7.2V10H7V14H10V22.5H14V14Z" fill="#FF5300"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_27931_403">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </a>                  
+        </div>
+        <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+          <a href="https://www.instagram.com/" target="_blank">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.5C14.717 2.5 15.056 2.51 16.122 2.56C17.187 2.61 17.912 2.777 18.55 3.025C19.21 3.279 19.766 3.623 20.322 4.178C20.8305 4.6779 21.224 5.28259 21.475 5.95C21.722 6.587 21.89 7.313 21.94 8.378C21.987 9.444 22 9.783 22 12.5C22 15.217 21.99 15.556 21.94 16.622C21.89 17.687 21.722 18.412 21.475 19.05C21.2247 19.7178 20.8311 20.3226 20.322 20.822C19.822 21.3303 19.2173 21.7238 18.55 21.975C17.913 22.222 17.187 22.39 16.122 22.44C15.056 22.487 14.717 22.5 12 22.5C9.283 22.5 8.944 22.49 7.878 22.44C6.813 22.39 6.088 22.222 5.45 21.975C4.78233 21.7245 4.17753 21.3309 3.678 20.822C3.16941 20.3222 2.77593 19.7175 2.525 19.05C2.277 18.413 2.11 17.687 2.06 16.622C2.013 15.556 2 15.217 2 12.5C2 9.783 2.01 9.444 2.06 8.378C2.11 7.312 2.277 6.588 2.525 5.95C2.77524 5.28218 3.1688 4.67732 3.678 4.178C4.17767 3.66923 4.78243 3.27573 5.45 3.025C6.088 2.777 6.812 2.61 7.878 2.56C8.944 2.513 9.283 2.5 12 2.5ZM12 7.5C10.6739 7.5 9.40215 8.02678 8.46447 8.96447C7.52678 9.90215 7 11.1739 7 12.5C7 13.8261 7.52678 15.0979 8.46447 16.0355C9.40215 16.9732 10.6739 17.5 12 17.5C13.3261 17.5 14.5979 16.9732 15.5355 16.0355C16.4732 15.0979 17 13.8261 17 12.5C17 11.1739 16.4732 9.90215 15.5355 8.96447C14.5979 8.02678 13.3261 7.5 12 7.5ZM18.5 7.25C18.5 6.91848 18.3683 6.60054 18.1339 6.36612C17.8995 6.1317 17.5815 6 17.25 6C16.9185 6 16.6005 6.1317 16.3661 6.36612C16.1317 6.60054 16 6.91848 16 7.25C16 7.58152 16.1317 7.89946 16.3661 8.13388C16.6005 8.3683 16.9185 8.5 17.25 8.5C17.5815 8.5 17.8995 8.3683 18.1339 8.13388C18.3683 7.89946 18.5 7.58152 18.5 7.25ZM12 9.5C12.7956 9.5 13.5587 9.81607 14.1213 10.3787C14.6839 10.9413 15 11.7044 15 12.5C15 13.2956 14.6839 14.0587 14.1213 14.6213C13.5587 15.1839 12.7956 15.5 12 15.5C11.2044 15.5 10.4413 15.1839 9.87868 14.6213C9.31607 14.0587 9 13.2956 9 12.5C9 11.7044 9.31607 10.9413 9.87868 10.3787C10.4413 9.81607 11.2044 9.5 12 9.5Z" fill="#FF5300"/>
+              </svg>
+          </a>                  
+        </div>
+        <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+          <a href="https://about.twitter.com/en" target="_blank">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27931_646)">
+              <path d="M22.1618 6.15605C21.3984 6.49374 20.5888 6.71552 19.7598 6.81405C20.6336 6.29148 21.2875 5.46906 21.5998 4.50005C20.7798 4.98805 19.8808 5.33005 18.9438 5.51505C18.3144 4.84163 17.4802 4.39501 16.5708 4.24463C15.6614 4.09425 14.7277 4.24854 13.9151 4.6835C13.1024 5.11846 12.4562 5.80973 12.0769 6.64984C11.6976 7.48995 11.6066 8.43183 11.8178 9.32905C10.1549 9.2457 8.52814 8.81357 7.0431 8.06071C5.55805 7.30785 4.24794 6.2511 3.19781 4.95905C2.8261 5.5975 2.63076 6.32328 2.63181 7.06205C2.63181 8.51205 3.36981 9.79305 4.49181 10.543C3.82782 10.5221 3.17844 10.3428 2.59781 10.02V10.072C2.59801 11.0377 2.93218 11.9737 3.54366 12.7211C4.15513 13.4686 5.00629 13.9815 5.95281 14.173C5.33642 14.3401 4.69012 14.3647 4.06281 14.245C4.32968 15.0763 4.84982 15.8032 5.5504 16.3242C6.25099 16.8451 7.09694 17.1338 7.96981 17.15C7.10229 17.8314 6.10899 18.335 5.04669 18.6322C3.98439 18.9294 2.87394 19.0143 1.77881 18.882C3.69051 20.1115 5.9159 20.7642 8.18881 20.762C15.8818 20.762 20.0888 14.389 20.0888 8.86205C20.0888 8.68205 20.0838 8.50005 20.0758 8.32205C20.8947 7.73022 21.6014 6.99707 22.1628 6.15705L22.1618 6.15605Z" fill="#FF5300"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_27931_646">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </a>                  
+        </div>
+        <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+          <a href="https://www.slido.com/" target="_blank">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.3102 20.9C11.9879 21.1066 10.6355 20.998 9.36308 20.5831C8.09069 20.1681 6.93425 19.4586 5.98791 18.5123C5.04156 17.5659 4.33205 16.4095 3.91713 15.1371C3.50221 13.8647 3.39361 12.5123 3.60016 11.19C3.07889 10.1985 2.88841 9.06632 3.05657 7.95885C3.22472 6.85138 3.74269 5.82672 4.53477 5.03464C5.32684 4.24257 6.3515 3.7246 7.45897 3.55644C8.56644 3.38829 9.69867 3.57877 10.6902 4.10004C12.0125 3.89348 13.3648 4.00209 14.6372 4.41701C15.9096 4.83193 17.0661 5.54144 18.0124 6.48779C18.9588 7.43413 19.6683 8.59057 20.0832 9.86296C20.4981 11.1353 20.6067 12.4877 20.4002 13.81C20.9214 14.8015 21.1119 15.9337 20.9437 17.0412C20.7756 18.1487 20.2576 19.1734 19.4655 19.9654C18.6735 20.7575 17.6488 21.2755 16.5413 21.4436C15.4339 21.6118 14.3016 21.4213 13.3102 20.9ZM12.0522 17.656H12.0122C14.8842 17.656 16.3152 16.27 16.3152 14.413C16.3152 13.215 15.7642 11.942 13.5892 11.455L11.6062 11.015C10.8512 10.843 9.98416 10.615 9.98416 9.90003C9.98416 9.18503 10.6042 8.68704 11.7082 8.68704C13.9382 8.68704 13.7352 10.215 14.8392 10.215C15.4152 10.215 15.9322 9.87303 15.9322 9.28504C15.9322 7.91504 13.7352 6.88504 11.8762 6.88504C9.85516 6.88504 7.70316 7.74404 7.70316 10.029C7.70316 11.127 8.09716 12.299 10.2632 12.842L12.9522 13.513C13.7682 13.715 13.9702 14.172 13.9702 14.585C13.9702 15.272 13.2862 15.943 12.0522 15.943C9.63516 15.943 9.97416 14.086 8.67816 14.086C8.09816 14.086 7.67516 14.484 7.67516 15.057C7.67516 16.171 9.02716 17.655 12.0522 17.655V17.656Z" fill="#FF5300"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>     
+    <section class="f-f-rubik">
+      <div class="container">
+        <div class="row pt-lg-120 pt-50">
+          <div class="col-12 col-lg-6">
+            <img src="./assets/image/Image(1).png" alt="image1" class="w-100">
+          </div>
+          <div class="col-12 col-lg-6 text-center text-sm-start pt-50">
+            <h6 class="my-0 color-gray fs-sm">About Us</h6>
+            <h2 class="m-0 pt-sm-25 fw-600 line-height-123 max-w-494 fs-2xl pt-18">We Are <span class="color-orange">
+              Making Ideas Better</span>For Everyone</h2>
+            <h6 class="m-0 color-gray pt-18 pb-25 fs-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum aenean. Nisi, lectus aliquet aliquam consectetur augue praesent. Lorem vulputate orci eget mi, sed pulvinar.
+              Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit faucibus est, dui interdum ut amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.</h6>
+              <button class="btn-1 text-white  border-radius-5 bg-orange border-0 fs-md btn-hover">Contact Us</button>
+          </div>
+        </div>
+        <div class="row py-50 pb-lg-120">
+          <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="box gap-36 d-flex flex-column align-items-center hover-shadow h-100 cursor-pointer">
+              <div class="color-box bg-orange rounded-circle d-flex justify-content-center align-items-center ">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2_3176)">
+                  <path d="M11.25 3.00375V3H24.9975C25.6875 3 26.25 3.56875 26.25 4.24V26.76C26.2497 27.089 26.1188 27.4044 25.886 27.6369C25.6533 27.8694 25.3378 28 25.0088 28H4.99128C4.82713 27.9989 4.66481 27.9654 4.51359 27.9015C4.36237 27.8376 4.22521 27.7446 4.10995 27.6277C3.99469 27.5108 3.90358 27.3724 3.84182 27.2203C3.78007 27.0682 3.74888 26.9054 3.75003 26.7412V10.5L11.25 3.00375ZM7.28753 10.5H11.25V6.5375L7.28753 10.5ZM13.75 5.5V11.75C13.75 12.0815 13.6183 12.3995 13.3839 12.6339C13.1495 12.8683 12.8316 13 12.5 13H6.25003V25.5H23.75V5.5H13.75Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2_3176">
+                  <rect width="30" height="30" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                  
+              </div>
+              <h6 class="m-0 color-gray fw-400 line-height-150 fs-md text-center">World leader in consulting and finance </h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="box gap-36 d-flex flex-column align-items-center hover-shadow h-100 cursor-pointer">
+              <div class="color-box bg-gray rounded-circle d-flex justify-content-center align-items-center ">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M28.75 15.4999L19.9112 24.3386L18.1438 22.5711L25.215 15.4999L18.1438 8.42863L19.9112 6.66113L28.75 15.4999ZM4.785 15.4999L11.8562 22.5711L10.0887 24.3386L1.25 15.4999L10.0887 6.66113L11.8562 8.42863L4.785 15.4999Z" fill="white"/>
+                  </svg>                                    
+              </div>
+              <h6 class="m-0 color-gray fw-400 line-height-150 fs-md text-center">A focused team with a specialized skill</h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-sm-0">
+            <div class="box gap-36 d-flex flex-column align-items-center hover-shadow h-100 cursor-pointer" >
+              <div class="color-box bg-blue rounded-circle d-flex justify-content-center align-items-center ">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2_3190)">
+                  <path d="M2.5 15.5001C2.5 14.4189 2.6375 13.3714 2.895 12.3701C3.58558 12.4064 4.27275 12.2511 4.88055 11.9212C5.48835 11.5914 5.9931 11.0999 6.33901 10.5011C6.68492 9.90226 6.85851 9.21947 6.84059 8.52816C6.82268 7.83686 6.61396 7.16397 6.2375 6.58389C7.74868 5.0971 9.61349 4.01951 11.6562 3.45264C11.97 4.06948 12.4483 4.58747 13.0382 4.94927C13.6282 5.31108 14.3067 5.50258 14.9987 5.50258C15.6908 5.50258 16.3693 5.31108 16.9593 4.94927C17.5492 4.58747 18.0275 4.06948 18.3413 3.45264C20.384 4.01951 22.2488 5.0971 23.76 6.58389C23.3831 7.16408 23.1741 7.83722 23.156 8.52884C23.138 9.22046 23.3116 9.90359 23.6577 10.5027C24.0038 11.1017 24.5089 11.5933 25.1171 11.9232C25.7253 12.253 26.4129 12.4081 27.1038 12.3714C27.3612 13.3714 27.4988 14.4189 27.4988 15.5001C27.4988 16.5814 27.3612 17.6289 27.1038 18.6301C26.4131 18.5936 25.7257 18.7488 25.1177 19.0785C24.5098 19.4083 24.0048 19.8998 23.6588 20.4986C23.3127 21.0975 23.139 21.7804 23.1569 22.4718C23.1747 23.1632 23.3835 23.8362 23.76 24.4164C22.2488 25.9032 20.384 26.9808 18.3413 27.5476C18.0275 26.9308 17.5492 26.4128 16.9593 26.051C16.3693 25.6892 15.6908 25.4977 14.9987 25.4977C14.3067 25.4977 13.6282 25.6892 13.0382 26.051C12.4483 26.4128 11.97 26.9308 11.6562 27.5476C9.61349 26.9808 7.74868 25.9032 6.2375 24.4164C6.61438 23.8362 6.82341 23.1631 6.84146 22.4714C6.85951 21.7798 6.68587 21.0967 6.33976 20.4976C5.99366 19.8986 5.48857 19.4069 4.88038 19.0771C4.2722 18.7473 3.58463 18.5922 2.89375 18.6289C2.6375 17.6301 2.5 16.5826 2.5 15.5001ZM8.505 19.2501C9.2925 20.6139 9.5175 22.1826 9.21 23.6551C9.72 24.0176 10.2625 24.3314 10.8313 24.5926C11.9771 23.5662 13.4616 22.9991 15 23.0001C16.575 23.0001 18.0475 23.5889 19.1688 24.5926C19.7375 24.3314 20.28 24.0176 20.79 23.6551C20.4743 22.1501 20.7253 20.5815 21.495 19.2501C22.2633 17.9181 23.4963 16.9166 24.9575 16.4376C25.0153 15.814 25.0153 15.1863 24.9575 14.5626C23.4958 14.084 22.2623 13.0824 21.4937 11.7501C20.7241 10.4188 20.473 8.85018 20.7887 7.34514C20.2789 6.98254 19.7361 6.66866 19.1675 6.40764C18.022 7.4338 16.5379 8.0009 15 8.00014C13.4616 8.00121 11.9771 7.43409 10.8313 6.40764C10.2627 6.66867 9.71986 6.98255 9.21 7.34514C9.52571 8.85018 9.27466 10.4188 8.505 11.7501C7.73671 13.0822 6.50373 14.0837 5.0425 14.5626C4.98469 15.1863 4.98469 15.814 5.0425 16.4376C6.50419 16.9163 7.73766 17.9179 8.50625 19.2501H8.505ZM15 19.2501C14.0054 19.2501 13.0516 18.8551 12.3483 18.1518C11.6451 17.4485 11.25 16.4947 11.25 15.5001C11.25 14.5056 11.6451 13.5517 12.3483 12.8485C13.0516 12.1452 14.0054 11.7501 15 11.7501C15.9946 11.7501 16.9484 12.1452 17.6517 12.8485C18.3549 13.5517 18.75 14.5056 18.75 15.5001C18.75 16.4947 18.3549 17.4485 17.6517 18.1518C16.9484 18.8551 15.9946 19.2501 15 19.2501ZM15 16.7501C15.3315 16.7501 15.6495 16.6184 15.8839 16.384C16.1183 16.1496 16.25 15.8317 16.25 15.5001C16.25 15.1686 16.1183 14.8507 15.8839 14.6163C15.6495 14.3818 15.3315 14.2501 15 14.2501C14.6685 14.2501 14.3505 14.3818 14.1161 14.6163C13.8817 14.8507 13.75 15.1686 13.75 15.5001C13.75 15.8317 13.8817 16.1496 14.1161 16.384C14.3505 16.6184 14.6685 16.7501 15 16.7501Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2_3190">
+                  <rect width="30" height="30" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                                     
+              </div>
+              <h6 class="m-0 color-gray fw-400 line-height-150 fs-md text-center">Trusted and professional advisors for you</h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 ">
+            <div class="box gap-36 d-flex flex-column align-items-center hover-shadow h-100 cursor-pointer">
+              <div class="color-box bg-black rounded-circle d-flex justify-content-center align-items-center ">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2_3197)">
+                  <path d="M12.5 4.25V6.75H6.25V24.25H23.75V18H26.25V25.5C26.25 25.8315 26.1183 26.1495 25.8839 26.3839C25.6495 26.6183 25.3315 26.75 25 26.75H5C4.66848 26.75 4.35054 26.6183 4.11612 26.3839C3.8817 26.1495 3.75 25.8315 3.75 25.5V5.5C3.75 5.16848 3.8817 4.85054 4.11612 4.61612C4.35054 4.3817 4.66848 4.25 5 4.25H12.5ZM21.9825 6.75H16.25V4.25H26.25V14.25H23.75V8.5175L15 17.2675L13.2325 15.5L21.9825 6.75Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2_3197">
+                  <rect width="30" height="30" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                                   
+              </div>
+              <h6 class="m-0 color-gray fw-400 line-height-150 fs-md text-center">Experience to give you a  better results</h6>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>        
+    <section class="f-f-rubik bg-orange-background ">
+      <div class="container">
+        <div class="row py-lg-60 pt-50">
+          <div class="col-12 col-lg-6 text-center text-sm-start">
+            <h6 class="m-0 color-gray line-height-150 fw-400 fs-sm">Our Expereince</h6>
+            <h2 class="m-0 fw-600 line-height-123  pt-18 fs-2xl">We Have Completed <span class="color-orange">150+ Projects</span > Succesfully</h2>
+            <h6 class="color-gray m-0 fw-400 line-height-150 pt-18 pb-25 fs-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum aenean. Nisi, lectus aliquet aliquam consectetur augue praesent. Lorem vulputate orci eget mi, sed pulvinar. Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit faucibus est, dui interdum ut amet. Adipiscing feugiat vel at posuere in. 
+              Pellentesque volutpat vestibulum</h6>
+              <button class="btn-1 bg-orange border-radius-5 border-0 text-white fw-500 line-height-123 fs-md btn-hover">Contact Us</button>
+          </div>
+          <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <div class="row pb-50 pb-sm-0">
+              <div class="col-12 col-sm-6">
+                <div class="bg-white box-2 text-center hover-shadow  cursor-pointer">
+                  <h3 class="m-0 fw-700 line-height-123 fs-3xl">250+</h3>
+                  <h5 class="m-0 fw-500 line-height-123 color-gray fs-md pt-18">  Global Customer</h5>
+                </div>
+                <div class="bg-white box-2 text-center mt-25 hover-shadow cursor-pointer">
+                  <h3 class="m-0 fw-700 line-height-123 fs-3xl">50+</h3>
+                  <h5 class="m-0 fw-500 line-height-123 color-gray fs-md pt-18">Team Member</h5>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="bg-white box-2 text-center mt-25 hover-shadow cursor-pointer">
+                  <h3 class="m-0 fw-700 line-height-123 fs-3xl">156+</h3>
+                  <h5 class="m-0 fw-500 line-height-123 color-gray fs-md pt-18">Project Completed</h5>
+                </div>
+                <div class="bg-white box-2 text-center mt-25 hover-shadow  cursor-pointer ">
+                  <h3 class="m-0 fw-700 line-height-123 fs-3xl">15+</h3>
+                  <h5 class="m-0 fw-500 line-height-123 color-gray fs-md pt-18">Our Company</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>          
+    <section class="f-f-rubik">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center pt-lg-120 pb-60 pt-50">
+          <h6 class="m-0 fw-400 line-height-150 color-gray fs-sm">Team Member</h6>
+          <h2 class="m-0 pt-18 pt-lg-25 fw-600 line-height-123 max-w-446 text-center fs-2xl">We Have
+            <span class="color-orange">Some Awesome</span> People</h2>
+        </div>
+        <div class=" pb-sm-120 d-flex gap-30 overflow-x-scroll pb-50  justify-content-center ">
+          
+            <div class="card-2 box-shadow border-0 hover-shadow position-relative overflow-hidden cursor-pointer w-270 h-100 ">
+              <div class="card-image">
+                <img src="./assets/image/Image(2).png" alt="image" class="w-100">
+                <div class=" d-flex gap-1 flex-column card-icon">
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href=" https://www.facebook.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_403)">
+                        <path d="M14 14H16.5L17.5 10H14V8C14 6.97 14 6 16 6H17.5V2.64C17.174 2.597 15.943 2.5 14.643 2.5C11.928 2.5 10 4.157 10 7.2V10H7V14H10V22.5H14V14Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_404">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.5C14.717 2.5 15.056 2.51 16.122 2.56C17.187 2.61 17.912 2.777 18.55 3.025C19.21 3.279 19.766 3.623 20.322 4.178C20.8305 4.6779 21.224 5.28259 21.475 5.95C21.722 6.587 21.89 7.313 21.94 8.378C21.987 9.444 22 9.783 22 12.5C22 15.217 21.99 15.556 21.94 16.622C21.89 17.687 21.722 18.412 21.475 19.05C21.2247 19.7178 20.8311 20.3226 20.322 20.822C19.822 21.3303 19.2173 21.7238 18.55 21.975C17.913 22.222 17.187 22.39 16.122 22.44C15.056 22.487 14.717 22.5 12 22.5C9.283 22.5 8.944 22.49 7.878 22.44C6.813 22.39 6.088 22.222 5.45 21.975C4.78233 21.7245 4.17753 21.3309 3.678 20.822C3.16941 20.3222 2.77593 19.7175 2.525 19.05C2.277 18.413 2.11 17.687 2.06 16.622C2.013 15.556 2 15.217 2 12.5C2 9.783 2.01 9.444 2.06 8.378C2.11 7.312 2.277 6.588 2.525 5.95C2.77524 5.28218 3.1688 4.67732 3.678 4.178C4.17767 3.66923 4.78243 3.27573 5.45 3.025C6.088 2.777 6.812 2.61 7.878 2.56C8.944 2.513 9.283 2.5 12 2.5ZM12 7.5C10.6739 7.5 9.40215 8.02678 8.46447 8.96447C7.52678 9.90215 7 11.1739 7 12.5C7 13.8261 7.52678 15.0979 8.46447 16.0355C9.40215 16.9732 10.6739 17.5 12 17.5C13.3261 17.5 14.5979 16.9732 15.5355 16.0355C16.4732 15.0979 17 13.8261 17 12.5C17 11.1739 16.4732 9.90215 15.5355 8.96447C14.5979 8.02678 13.3261 7.5 12 7.5ZM18.5 7.25C18.5 6.91848 18.3683 6.60054 18.1339 6.36612C17.8995 6.1317 17.5815 6 17.25 6C16.9185 6 16.6005 6.1317 16.3661 6.36612C16.1317 6.60054 16 6.91848 16 7.25C16 7.58152 16.1317 7.89946 16.3661 8.13388C16.6005 8.3683 16.9185 8.5 17.25 8.5C17.5815 8.5 17.8995 8.3683 18.1339 8.13388C18.3683 7.89946 18.5 7.58152 18.5 7.25ZM12 9.5C12.7956 9.5 13.5587 9.81607 14.1213 10.3787C14.6839 10.9413 15 11.7044 15 12.5C15 13.2956 14.6839 14.0587 14.1213 14.6213C13.5587 15.1839 12.7956 15.5 12 15.5C11.2044 15.5 10.4413 15.1839 9.87868 14.6213C9.31607 14.0587 9 13.2956 9 12.5C9 11.7044 9.31607 10.9413 9.87868 10.3787C10.4413 9.81607 11.2044 9.5 12 9.5Z" fill="#FF5300"/>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://about.twitter.com/en" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_646)">
+                        <path d="M22.1618 6.15605C21.3984 6.49374 20.5888 6.71552 19.7598 6.81405C20.6336 6.29148 21.2875 5.46906 21.5998 4.50005C20.7798 4.98805 19.8808 5.33005 18.9438 5.51505C18.3144 4.84163 17.4802 4.39501 16.5708 4.24463C15.6614 4.09425 14.7277 4.24854 13.9151 4.6835C13.1024 5.11846 12.4562 5.80973 12.0769 6.64984C11.6976 7.48995 11.6066 8.43183 11.8178 9.32905C10.1549 9.2457 8.52814 8.81357 7.0431 8.06071C5.55805 7.30785 4.24794 6.2511 3.19781 4.95905C2.8261 5.5975 2.63076 6.32328 2.63181 7.06205C2.63181 8.51205 3.36981 9.79305 4.49181 10.543C3.82782 10.5221 3.17844 10.3428 2.59781 10.02V10.072C2.59801 11.0377 2.93218 11.9737 3.54366 12.7211C4.15513 13.4686 5.00629 13.9815 5.95281 14.173C5.33642 14.3401 4.69012 14.3647 4.06281 14.245C4.32968 15.0763 4.84982 15.8032 5.5504 16.3242C6.25099 16.8451 7.09694 17.1338 7.96981 17.15C7.10229 17.8314 6.10899 18.335 5.04669 18.6322C3.98439 18.9294 2.87394 19.0143 1.77881 18.882C3.69051 20.1115 5.9159 20.7642 8.18881 20.762C15.8818 20.762 20.0888 14.389 20.0888 8.86205C20.0888 8.68205 20.0838 8.50005 20.0758 8.32205C20.8947 7.73022 21.6014 6.99707 22.1628 6.15705L22.1618 6.15605Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_647">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.slido.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.3102 20.9C11.9879 21.1066 10.6355 20.998 9.36308 20.5831C8.09069 20.1681 6.93425 19.4586 5.98791 18.5123C5.04156 17.5659 4.33205 16.4095 3.91713 15.1371C3.50221 13.8647 3.39361 12.5123 3.60016 11.19C3.07889 10.1985 2.88841 9.06632 3.05657 7.95885C3.22472 6.85138 3.74269 5.82672 4.53477 5.03464C5.32684 4.24257 6.3515 3.7246 7.45897 3.55644C8.56644 3.38829 9.69867 3.57877 10.6902 4.10004C12.0125 3.89348 13.3648 4.00209 14.6372 4.41701C15.9096 4.83193 17.0661 5.54144 18.0124 6.48779C18.9588 7.43413 19.6683 8.59057 20.0832 9.86296C20.4981 11.1353 20.6067 12.4877 20.4002 13.81C20.9214 14.8015 21.1119 15.9337 20.9437 17.0412C20.7756 18.1487 20.2576 19.1734 19.4655 19.9654C18.6735 20.7575 17.6488 21.2755 16.5413 21.4436C15.4339 21.6118 14.3016 21.4213 13.3102 20.9ZM12.0522 17.656H12.0122C14.8842 17.656 16.3152 16.27 16.3152 14.413C16.3152 13.215 15.7642 11.942 13.5892 11.455L11.6062 11.015C10.8512 10.843 9.98416 10.615 9.98416 9.90003C9.98416 9.18503 10.6042 8.68704 11.7082 8.68704C13.9382 8.68704 13.7352 10.215 14.8392 10.215C15.4152 10.215 15.9322 9.87303 15.9322 9.28504C15.9322 7.91504 13.7352 6.88504 11.8762 6.88504C9.85516 6.88504 7.70316 7.74404 7.70316 10.029C7.70316 11.127 8.09716 12.299 10.2632 12.842L12.9522 13.513C13.7682 13.715 13.9702 14.172 13.9702 14.585C13.9702 15.272 13.2862 15.943 12.0522 15.943C9.63516 15.943 9.97416 14.086 8.67816 14.086C8.09816 14.086 7.67516 14.484 7.67516 15.057C7.67516 16.171 9.02716 17.655 12.0522 17.655V17.656Z" fill="#FF5300"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-0">
+                <h5 class="m-0 fw-500 line-height-123 fs-md">Gustavo Herwitz</h5>
+                <h6 class="m-0 color-gray fw-400 line-height-150 fs-sm pt-12">UI/UX Designer</h6>
+              </div>
+            </div>                    
+            <div class="card-2 box-shadow border-0 hover-shadow position-relative overflow-hidden cursor-pointer w-270 h-100">
+              <div class="card-image">
+                <img src="./assets/image/Image(3).png" alt="image" class="w-100">
+                <div class=" d-flex gap-1 flex-column card-icon">
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href=" https://www.facebook.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_403)">
+                        <path d="M14 14H16.5L17.5 10H14V8C14 6.97 14 6 16 6H17.5V2.64C17.174 2.597 15.943 2.5 14.643 2.5C11.928 2.5 10 4.157 10 7.2V10H7V14H10V22.5H14V14Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_409">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.5C14.717 2.5 15.056 2.51 16.122 2.56C17.187 2.61 17.912 2.777 18.55 3.025C19.21 3.279 19.766 3.623 20.322 4.178C20.8305 4.6779 21.224 5.28259 21.475 5.95C21.722 6.587 21.89 7.313 21.94 8.378C21.987 9.444 22 9.783 22 12.5C22 15.217 21.99 15.556 21.94 16.622C21.89 17.687 21.722 18.412 21.475 19.05C21.2247 19.7178 20.8311 20.3226 20.322 20.822C19.822 21.3303 19.2173 21.7238 18.55 21.975C17.913 22.222 17.187 22.39 16.122 22.44C15.056 22.487 14.717 22.5 12 22.5C9.283 22.5 8.944 22.49 7.878 22.44C6.813 22.39 6.088 22.222 5.45 21.975C4.78233 21.7245 4.17753 21.3309 3.678 20.822C3.16941 20.3222 2.77593 19.7175 2.525 19.05C2.277 18.413 2.11 17.687 2.06 16.622C2.013 15.556 2 15.217 2 12.5C2 9.783 2.01 9.444 2.06 8.378C2.11 7.312 2.277 6.588 2.525 5.95C2.77524 5.28218 3.1688 4.67732 3.678 4.178C4.17767 3.66923 4.78243 3.27573 5.45 3.025C6.088 2.777 6.812 2.61 7.878 2.56C8.944 2.513 9.283 2.5 12 2.5ZM12 7.5C10.6739 7.5 9.40215 8.02678 8.46447 8.96447C7.52678 9.90215 7 11.1739 7 12.5C7 13.8261 7.52678 15.0979 8.46447 16.0355C9.40215 16.9732 10.6739 17.5 12 17.5C13.3261 17.5 14.5979 16.9732 15.5355 16.0355C16.4732 15.0979 17 13.8261 17 12.5C17 11.1739 16.4732 9.90215 15.5355 8.96447C14.5979 8.02678 13.3261 7.5 12 7.5ZM18.5 7.25C18.5 6.91848 18.3683 6.60054 18.1339 6.36612C17.8995 6.1317 17.5815 6 17.25 6C16.9185 6 16.6005 6.1317 16.3661 6.36612C16.1317 6.60054 16 6.91848 16 7.25C16 7.58152 16.1317 7.89946 16.3661 8.13388C16.6005 8.3683 16.9185 8.5 17.25 8.5C17.5815 8.5 17.8995 8.3683 18.1339 8.13388C18.3683 7.89946 18.5 7.58152 18.5 7.25ZM12 9.5C12.7956 9.5 13.5587 9.81607 14.1213 10.3787C14.6839 10.9413 15 11.7044 15 12.5C15 13.2956 14.6839 14.0587 14.1213 14.6213C13.5587 15.1839 12.7956 15.5 12 15.5C11.2044 15.5 10.4413 15.1839 9.87868 14.6213C9.31607 14.0587 9 13.2956 9 12.5C9 11.7044 9.31607 10.9413 9.87868 10.3787C10.4413 9.81607 11.2044 9.5 12 9.5Z" fill="#FF5300"/>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://about.twitter.com/en" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_646)">
+                        <path d="M22.1618 6.15605C21.3984 6.49374 20.5888 6.71552 19.7598 6.81405C20.6336 6.29148 21.2875 5.46906 21.5998 4.50005C20.7798 4.98805 19.8808 5.33005 18.9438 5.51505C18.3144 4.84163 17.4802 4.39501 16.5708 4.24463C15.6614 4.09425 14.7277 4.24854 13.9151 4.6835C13.1024 5.11846 12.4562 5.80973 12.0769 6.64984C11.6976 7.48995 11.6066 8.43183 11.8178 9.32905C10.1549 9.2457 8.52814 8.81357 7.0431 8.06071C5.55805 7.30785 4.24794 6.2511 3.19781 4.95905C2.8261 5.5975 2.63076 6.32328 2.63181 7.06205C2.63181 8.51205 3.36981 9.79305 4.49181 10.543C3.82782 10.5221 3.17844 10.3428 2.59781 10.02V10.072C2.59801 11.0377 2.93218 11.9737 3.54366 12.7211C4.15513 13.4686 5.00629 13.9815 5.95281 14.173C5.33642 14.3401 4.69012 14.3647 4.06281 14.245C4.32968 15.0763 4.84982 15.8032 5.5504 16.3242C6.25099 16.8451 7.09694 17.1338 7.96981 17.15C7.10229 17.8314 6.10899 18.335 5.04669 18.6322C3.98439 18.9294 2.87394 19.0143 1.77881 18.882C3.69051 20.1115 5.9159 20.7642 8.18881 20.762C15.8818 20.762 20.0888 14.389 20.0888 8.86205C20.0888 8.68205 20.0838 8.50005 20.0758 8.32205C20.8947 7.73022 21.6014 6.99707 22.1628 6.15705L22.1618 6.15605Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_650">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.slido.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.3102 20.9C11.9879 21.1066 10.6355 20.998 9.36308 20.5831C8.09069 20.1681 6.93425 19.4586 5.98791 18.5123C5.04156 17.5659 4.33205 16.4095 3.91713 15.1371C3.50221 13.8647 3.39361 12.5123 3.60016 11.19C3.07889 10.1985 2.88841 9.06632 3.05657 7.95885C3.22472 6.85138 3.74269 5.82672 4.53477 5.03464C5.32684 4.24257 6.3515 3.7246 7.45897 3.55644C8.56644 3.38829 9.69867 3.57877 10.6902 4.10004C12.0125 3.89348 13.3648 4.00209 14.6372 4.41701C15.9096 4.83193 17.0661 5.54144 18.0124 6.48779C18.9588 7.43413 19.6683 8.59057 20.0832 9.86296C20.4981 11.1353 20.6067 12.4877 20.4002 13.81C20.9214 14.8015 21.1119 15.9337 20.9437 17.0412C20.7756 18.1487 20.2576 19.1734 19.4655 19.9654C18.6735 20.7575 17.6488 21.2755 16.5413 21.4436C15.4339 21.6118 14.3016 21.4213 13.3102 20.9ZM12.0522 17.656H12.0122C14.8842 17.656 16.3152 16.27 16.3152 14.413C16.3152 13.215 15.7642 11.942 13.5892 11.455L11.6062 11.015C10.8512 10.843 9.98416 10.615 9.98416 9.90003C9.98416 9.18503 10.6042 8.68704 11.7082 8.68704C13.9382 8.68704 13.7352 10.215 14.8392 10.215C15.4152 10.215 15.9322 9.87303 15.9322 9.28504C15.9322 7.91504 13.7352 6.88504 11.8762 6.88504C9.85516 6.88504 7.70316 7.74404 7.70316 10.029C7.70316 11.127 8.09716 12.299 10.2632 12.842L12.9522 13.513C13.7682 13.715 13.9702 14.172 13.9702 14.585C13.9702 15.272 13.2862 15.943 12.0522 15.943C9.63516 15.943 9.97416 14.086 8.67816 14.086C8.09816 14.086 7.67516 14.484 7.67516 15.057C7.67516 16.171 9.02716 17.655 12.0522 17.655V17.656Z" fill="#FF5300"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-0">
+                <h5 class="m-0 fw-500 line-height-123  fs-md">Phillip Curtis</h5>
+                <h6 class="m-0 color-gray fw-400 line-height-150 fs-sm pt-12">Graphic Designer</h6>
+              </div>
+            </div>                    
+            <div class="card-2 box-shadow border-0 hover-shadow position-relative overflow-hidden cursor-pointer w-270  h-100">
+              <div class="card-image">
+                <img src="./assets/image/Image(4).png" alt="image" class="w-100">
+                <div class=" d-flex gap-1 flex-column card-icon">
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href=" https://www.facebook.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_403)">
+                        <path d="M14 14H16.5L17.5 10H14V8C14 6.97 14 6 16 6H17.5V2.64C17.174 2.597 15.943 2.5 14.643 2.5C11.928 2.5 10 4.157 10 7.2V10H7V14H10V22.5H14V14Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_411">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.5C14.717 2.5 15.056 2.51 16.122 2.56C17.187 2.61 17.912 2.777 18.55 3.025C19.21 3.279 19.766 3.623 20.322 4.178C20.8305 4.6779 21.224 5.28259 21.475 5.95C21.722 6.587 21.89 7.313 21.94 8.378C21.987 9.444 22 9.783 22 12.5C22 15.217 21.99 15.556 21.94 16.622C21.89 17.687 21.722 18.412 21.475 19.05C21.2247 19.7178 20.8311 20.3226 20.322 20.822C19.822 21.3303 19.2173 21.7238 18.55 21.975C17.913 22.222 17.187 22.39 16.122 22.44C15.056 22.487 14.717 22.5 12 22.5C9.283 22.5 8.944 22.49 7.878 22.44C6.813 22.39 6.088 22.222 5.45 21.975C4.78233 21.7245 4.17753 21.3309 3.678 20.822C3.16941 20.3222 2.77593 19.7175 2.525 19.05C2.277 18.413 2.11 17.687 2.06 16.622C2.013 15.556 2 15.217 2 12.5C2 9.783 2.01 9.444 2.06 8.378C2.11 7.312 2.277 6.588 2.525 5.95C2.77524 5.28218 3.1688 4.67732 3.678 4.178C4.17767 3.66923 4.78243 3.27573 5.45 3.025C6.088 2.777 6.812 2.61 7.878 2.56C8.944 2.513 9.283 2.5 12 2.5ZM12 7.5C10.6739 7.5 9.40215 8.02678 8.46447 8.96447C7.52678 9.90215 7 11.1739 7 12.5C7 13.8261 7.52678 15.0979 8.46447 16.0355C9.40215 16.9732 10.6739 17.5 12 17.5C13.3261 17.5 14.5979 16.9732 15.5355 16.0355C16.4732 15.0979 17 13.8261 17 12.5C17 11.1739 16.4732 9.90215 15.5355 8.96447C14.5979 8.02678 13.3261 7.5 12 7.5ZM18.5 7.25C18.5 6.91848 18.3683 6.60054 18.1339 6.36612C17.8995 6.1317 17.5815 6 17.25 6C16.9185 6 16.6005 6.1317 16.3661 6.36612C16.1317 6.60054 16 6.91848 16 7.25C16 7.58152 16.1317 7.89946 16.3661 8.13388C16.6005 8.3683 16.9185 8.5 17.25 8.5C17.5815 8.5 17.8995 8.3683 18.1339 8.13388C18.3683 7.89946 18.5 7.58152 18.5 7.25ZM12 9.5C12.7956 9.5 13.5587 9.81607 14.1213 10.3787C14.6839 10.9413 15 11.7044 15 12.5C15 13.2956 14.6839 14.0587 14.1213 14.6213C13.5587 15.1839 12.7956 15.5 12 15.5C11.2044 15.5 10.4413 15.1839 9.87868 14.6213C9.31607 14.0587 9 13.2956 9 12.5C9 11.7044 9.31607 10.9413 9.87868 10.3787C10.4413 9.81607 11.2044 9.5 12 9.5Z" fill="#FF5300"/>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://about.twitter.com/en" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_646)">
+                        <path d="M22.1618 6.15605C21.3984 6.49374 20.5888 6.71552 19.7598 6.81405C20.6336 6.29148 21.2875 5.46906 21.5998 4.50005C20.7798 4.98805 19.8808 5.33005 18.9438 5.51505C18.3144 4.84163 17.4802 4.39501 16.5708 4.24463C15.6614 4.09425 14.7277 4.24854 13.9151 4.6835C13.1024 5.11846 12.4562 5.80973 12.0769 6.64984C11.6976 7.48995 11.6066 8.43183 11.8178 9.32905C10.1549 9.2457 8.52814 8.81357 7.0431 8.06071C5.55805 7.30785 4.24794 6.2511 3.19781 4.95905C2.8261 5.5975 2.63076 6.32328 2.63181 7.06205C2.63181 8.51205 3.36981 9.79305 4.49181 10.543C3.82782 10.5221 3.17844 10.3428 2.59781 10.02V10.072C2.59801 11.0377 2.93218 11.9737 3.54366 12.7211C4.15513 13.4686 5.00629 13.9815 5.95281 14.173C5.33642 14.3401 4.69012 14.3647 4.06281 14.245C4.32968 15.0763 4.84982 15.8032 5.5504 16.3242C6.25099 16.8451 7.09694 17.1338 7.96981 17.15C7.10229 17.8314 6.10899 18.335 5.04669 18.6322C3.98439 18.9294 2.87394 19.0143 1.77881 18.882C3.69051 20.1115 5.9159 20.7642 8.18881 20.762C15.8818 20.762 20.0888 14.389 20.0888 8.86205C20.0888 8.68205 20.0838 8.50005 20.0758 8.32205C20.8947 7.73022 21.6014 6.99707 22.1628 6.15705L22.1618 6.15605Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_670">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.slido.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.3102 20.9C11.9879 21.1066 10.6355 20.998 9.36308 20.5831C8.09069 20.1681 6.93425 19.4586 5.98791 18.5123C5.04156 17.5659 4.33205 16.4095 3.91713 15.1371C3.50221 13.8647 3.39361 12.5123 3.60016 11.19C3.07889 10.1985 2.88841 9.06632 3.05657 7.95885C3.22472 6.85138 3.74269 5.82672 4.53477 5.03464C5.32684 4.24257 6.3515 3.7246 7.45897 3.55644C8.56644 3.38829 9.69867 3.57877 10.6902 4.10004C12.0125 3.89348 13.3648 4.00209 14.6372 4.41701C15.9096 4.83193 17.0661 5.54144 18.0124 6.48779C18.9588 7.43413 19.6683 8.59057 20.0832 9.86296C20.4981 11.1353 20.6067 12.4877 20.4002 13.81C20.9214 14.8015 21.1119 15.9337 20.9437 17.0412C20.7756 18.1487 20.2576 19.1734 19.4655 19.9654C18.6735 20.7575 17.6488 21.2755 16.5413 21.4436C15.4339 21.6118 14.3016 21.4213 13.3102 20.9ZM12.0522 17.656H12.0122C14.8842 17.656 16.3152 16.27 16.3152 14.413C16.3152 13.215 15.7642 11.942 13.5892 11.455L11.6062 11.015C10.8512 10.843 9.98416 10.615 9.98416 9.90003C9.98416 9.18503 10.6042 8.68704 11.7082 8.68704C13.9382 8.68704 13.7352 10.215 14.8392 10.215C15.4152 10.215 15.9322 9.87303 15.9322 9.28504C15.9322 7.91504 13.7352 6.88504 11.8762 6.88504C9.85516 6.88504 7.70316 7.74404 7.70316 10.029C7.70316 11.127 8.09716 12.299 10.2632 12.842L12.9522 13.513C13.7682 13.715 13.9702 14.172 13.9702 14.585C13.9702 15.272 13.2862 15.943 12.0522 15.943C9.63516 15.943 9.97416 14.086 8.67816 14.086C8.09816 14.086 7.67516 14.484 7.67516 15.057C7.67516 16.171 9.02716 17.655 12.0522 17.655V17.656Z" fill="#FF5300"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-0">
+                <h5 class="m-0 fw-500 line-height-123  fs-md">Talan Torff</h5>
+                <h6 class="m-0 color-gray fw-400 line-height-150 fs-sm pt-12">Web Developer</h6>
+              </div>
+            </div>                    
+            <div class="card-2 box-shadow border-0 hover-shadow position-relative overflow-hidden cursor-pointer w-270 h-100">
+              <div class="card-image">
+                <img src="./assets/image/Image(5).png" alt="image" class="w-100">
+                <div class=" d-flex gap-1 flex-column card-icon">
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href=" https://www.facebook.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_403)">
+                        <path d="M14 14H16.5L17.5 10H14V8C14 6.97 14 6 16 6H17.5V2.64C17.174 2.597 15.943 2.5 14.643 2.5C11.928 2.5 10 4.157 10 7.2V10H7V14H10V22.5H14V14Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_412">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.5C14.717 2.5 15.056 2.51 16.122 2.56C17.187 2.61 17.912 2.777 18.55 3.025C19.21 3.279 19.766 3.623 20.322 4.178C20.8305 4.6779 21.224 5.28259 21.475 5.95C21.722 6.587 21.89 7.313 21.94 8.378C21.987 9.444 22 9.783 22 12.5C22 15.217 21.99 15.556 21.94 16.622C21.89 17.687 21.722 18.412 21.475 19.05C21.2247 19.7178 20.8311 20.3226 20.322 20.822C19.822 21.3303 19.2173 21.7238 18.55 21.975C17.913 22.222 17.187 22.39 16.122 22.44C15.056 22.487 14.717 22.5 12 22.5C9.283 22.5 8.944 22.49 7.878 22.44C6.813 22.39 6.088 22.222 5.45 21.975C4.78233 21.7245 4.17753 21.3309 3.678 20.822C3.16941 20.3222 2.77593 19.7175 2.525 19.05C2.277 18.413 2.11 17.687 2.06 16.622C2.013 15.556 2 15.217 2 12.5C2 9.783 2.01 9.444 2.06 8.378C2.11 7.312 2.277 6.588 2.525 5.95C2.77524 5.28218 3.1688 4.67732 3.678 4.178C4.17767 3.66923 4.78243 3.27573 5.45 3.025C6.088 2.777 6.812 2.61 7.878 2.56C8.944 2.513 9.283 2.5 12 2.5ZM12 7.5C10.6739 7.5 9.40215 8.02678 8.46447 8.96447C7.52678 9.90215 7 11.1739 7 12.5C7 13.8261 7.52678 15.0979 8.46447 16.0355C9.40215 16.9732 10.6739 17.5 12 17.5C13.3261 17.5 14.5979 16.9732 15.5355 16.0355C16.4732 15.0979 17 13.8261 17 12.5C17 11.1739 16.4732 9.90215 15.5355 8.96447C14.5979 8.02678 13.3261 7.5 12 7.5ZM18.5 7.25C18.5 6.91848 18.3683 6.60054 18.1339 6.36612C17.8995 6.1317 17.5815 6 17.25 6C16.9185 6 16.6005 6.1317 16.3661 6.36612C16.1317 6.60054 16 6.91848 16 7.25C16 7.58152 16.1317 7.89946 16.3661 8.13388C16.6005 8.3683 16.9185 8.5 17.25 8.5C17.5815 8.5 17.8995 8.3683 18.1339 8.13388C18.3683 7.89946 18.5 7.58152 18.5 7.25ZM12 9.5C12.7956 9.5 13.5587 9.81607 14.1213 10.3787C14.6839 10.9413 15 11.7044 15 12.5C15 13.2956 14.6839 14.0587 14.1213 14.6213C13.5587 15.1839 12.7956 15.5 12 15.5C11.2044 15.5 10.4413 15.1839 9.87868 14.6213C9.31607 14.0587 9 13.2956 9 12.5C9 11.7044 9.31607 10.9413 9.87868 10.3787C10.4413 9.81607 11.2044 9.5 12 9.5Z" fill="#FF5300"/>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://about.twitter.com/en" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_27931_646)">
+                        <path d="M22.1618 6.15605C21.3984 6.49374 20.5888 6.71552 19.7598 6.81405C20.6336 6.29148 21.2875 5.46906 21.5998 4.50005C20.7798 4.98805 19.8808 5.33005 18.9438 5.51505C18.3144 4.84163 17.4802 4.39501 16.5708 4.24463C15.6614 4.09425 14.7277 4.24854 13.9151 4.6835C13.1024 5.11846 12.4562 5.80973 12.0769 6.64984C11.6976 7.48995 11.6066 8.43183 11.8178 9.32905C10.1549 9.2457 8.52814 8.81357 7.0431 8.06071C5.55805 7.30785 4.24794 6.2511 3.19781 4.95905C2.8261 5.5975 2.63076 6.32328 2.63181 7.06205C2.63181 8.51205 3.36981 9.79305 4.49181 10.543C3.82782 10.5221 3.17844 10.3428 2.59781 10.02V10.072C2.59801 11.0377 2.93218 11.9737 3.54366 12.7211C4.15513 13.4686 5.00629 13.9815 5.95281 14.173C5.33642 14.3401 4.69012 14.3647 4.06281 14.245C4.32968 15.0763 4.84982 15.8032 5.5504 16.3242C6.25099 16.8451 7.09694 17.1338 7.96981 17.15C7.10229 17.8314 6.10899 18.335 5.04669 18.6322C3.98439 18.9294 2.87394 19.0143 1.77881 18.882C3.69051 20.1115 5.9159 20.7642 8.18881 20.762C15.8818 20.762 20.0888 14.389 20.0888 8.86205C20.0888 8.68205 20.0838 8.50005 20.0758 8.32205C20.8947 7.73022 21.6014 6.99707 22.1628 6.15705L22.1618 6.15605Z" fill="#FF5300"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_27931_648">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>                  
+                  </div>
+                  <div class="social-media-icon bg-white d-flex justify-content-center align-items-center box-shadow">
+                    <a href="https://www.slido.com/" target="_blank">
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.3102 20.9C11.9879 21.1066 10.6355 20.998 9.36308 20.5831C8.09069 20.1681 6.93425 19.4586 5.98791 18.5123C5.04156 17.5659 4.33205 16.4095 3.91713 15.1371C3.50221 13.8647 3.39361 12.5123 3.60016 11.19C3.07889 10.1985 2.88841 9.06632 3.05657 7.95885C3.22472 6.85138 3.74269 5.82672 4.53477 5.03464C5.32684 4.24257 6.3515 3.7246 7.45897 3.55644C8.56644 3.38829 9.69867 3.57877 10.6902 4.10004C12.0125 3.89348 13.3648 4.00209 14.6372 4.41701C15.9096 4.83193 17.0661 5.54144 18.0124 6.48779C18.9588 7.43413 19.6683 8.59057 20.0832 9.86296C20.4981 11.1353 20.6067 12.4877 20.4002 13.81C20.9214 14.8015 21.1119 15.9337 20.9437 17.0412C20.7756 18.1487 20.2576 19.1734 19.4655 19.9654C18.6735 20.7575 17.6488 21.2755 16.5413 21.4436C15.4339 21.6118 14.3016 21.4213 13.3102 20.9ZM12.0522 17.656H12.0122C14.8842 17.656 16.3152 16.27 16.3152 14.413C16.3152 13.215 15.7642 11.942 13.5892 11.455L11.6062 11.015C10.8512 10.843 9.98416 10.615 9.98416 9.90003C9.98416 9.18503 10.6042 8.68704 11.7082 8.68704C13.9382 8.68704 13.7352 10.215 14.8392 10.215C15.4152 10.215 15.9322 9.87303 15.9322 9.28504C15.9322 7.91504 13.7352 6.88504 11.8762 6.88504C9.85516 6.88504 7.70316 7.74404 7.70316 10.029C7.70316 11.127 8.09716 12.299 10.2632 12.842L12.9522 13.513C13.7682 13.715 13.9702 14.172 13.9702 14.585C13.9702 15.272 13.2862 15.943 12.0522 15.943C9.63516 15.943 9.97416 14.086 8.67816 14.086C8.09816 14.086 7.67516 14.484 7.67516 15.057C7.67516 16.171 9.02716 17.655 12.0522 17.655V17.656Z" fill="#FF5300"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-0">
+                <h5 class="m-0 fw-500  line-height-123  fs-md">Abram Vaccaro</h5>
+                <h6 class="m-0 color-gray fw-400 line-height-150 fs-sm pt-12">App Developer</h6>
+              </div>
+            </div>
+          
+        </div>  
+         <div class="  d-flex justify-content-center flex-column align-items-center ">
+          <h6 class="m-0 fw-400 line-height-150 color-gray fs-sm fs-sm">Our Work</h6>
+          <h2 class="m-0 max-w-649 text-center line-height-123 fw-600 pt-25 fs-2xl">We Have Some
+            <span class="color-orange ">Designed & Development</span> Projects</h2>             
+        </div>
+        <div class="scrollmenu   gap-43 d-flex justify-content-center pt-25 ">
+          <h5 class="scroll-item m-0 color-gray fw-500 line-height-123 fs-md m-0 d-inline-block text-nowrap">All</h5>
+          <h5 class="scroll-item m-0 color-gray fw-500 line-height-123 fs-md m-0 d-inline-block text-nowrap">Graphic Design</h5>
+          <h5 class="scroll-item m-0 color-gray fw-500 line-height-123 fs-md m-0 d-inline-block text-nowrap">UI/UX Design</h5>
+          <h5 class="scroll-item m-0 color-gray fw-500 line-height-123 fs-md m-0 d-inline-block text-nowrap">Web Development</h5>
+        </div> 
+        <div class="row pt-lg-60 pt-50 pb-120">
+          <div class="col-12 col-md-4 mb-30 mb-md-0">            
+              <div class="position-relative template-hover mb-30">
+                <img src=".//assets/image/grid1.png" alt="image" class="w-100 " >
+                <div class="template text-white  position-absolute d-flex flex-column justify-content-end align-items-center pb-47 cursor-pointer">
+                  <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_28076_76)">
+                    <path d="M30.0518 28.1949L37.1902 35.3316L34.8318 37.6899L27.6952 30.5516C25.0397 32.6803 21.7368 33.8381 18.3335 33.8333C10.0535 33.8333 3.3335 27.1133 3.3335 18.8333C3.3335 10.5533 10.0535 3.83325 18.3335 3.83325C26.6135 3.83325 33.3335 10.5533 33.3335 18.8333C33.3383 22.2366 32.1805 25.5395 30.0518 28.1949ZM26.7085 26.9583C28.8237 24.7831 30.0049 21.8673 30.0002 18.8333C30.0002 12.3866 24.7785 7.16659 18.3335 7.16659C11.8868 7.16659 6.66683 12.3866 6.66683 18.8333C6.66683 25.2783 11.8868 30.4999 18.3335 30.4999C21.3675 30.5047 24.2833 29.3234 26.4585 27.2083L26.7085 26.9583Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_28076_76">
+                    <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                  <h4 class="m-0 fs-lg fw-500 line-height-123 pt-25">Latest work</h4>
+                  <h6 class="m-0 fs-sm line-height-150 fw-400 pt-18">UI/UX Design</h6>                
+                </div>
+              </div>
+              <div class="position-relative template-hover">
+                <img src=".//assets/image/Image(8).png" alt="image" class="w-100 " >
+                <div class="template text-white  position-absolute d-flex flex-column justify-content-end align-items-center pb-47 cursor-pointer">
+                  <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_28076_77)">
+                    <path d="M30.0518 28.1949L37.1902 35.3316L34.8318 37.6899L27.6952 30.5516C25.0397 32.6803 21.7368 33.8381 18.3335 33.8333C10.0535 33.8333 3.3335 27.1133 3.3335 18.8333C3.3335 10.5533 10.0535 3.83325 18.3335 3.83325C26.6135 3.83325 33.3335 10.5533 33.3335 18.8333C33.3383 22.2366 32.1805 25.5395 30.0518 28.1949ZM26.7085 26.9583C28.8237 24.7831 30.0049 21.8673 30.0002 18.8333C30.0002 12.3866 24.7785 7.16659 18.3335 7.16659C11.8868 7.16659 6.66683 12.3866 6.66683 18.8333C6.66683 25.2783 11.8868 30.4999 18.3335 30.4999C21.3675 30.5047 24.2833 29.3234 26.4585 27.2083L26.7085 26.9583Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_28076_77">
+                    <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                  <h4 class="m-0 fs-lg fw-500 line-height-123 pt-25">Latest work</h4>
+                  <h6 class="m-0 fs-sm line-height-150 fw-400 pt-18">UI/UX Design</h6>                
+                </div>
+              </div>                                                 
+          </div>
+          <div class="col-12 col-md-4 mb-30 mb-md-30">
+            <div class="position-relative template-hover mb-30">
+              <img src=".//assets/image/Image(6).png" alt="image" class="w-100 " >
+              <div class="template text-white  position-absolute d-flex flex-column justify-content-end align-items-center pb-47 cursor-pointer">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_28076_78)">
+                  <path d="M30.0518 28.1949L37.1902 35.3316L34.8318 37.6899L27.6952 30.5516C25.0397 32.6803 21.7368 33.8381 18.3335 33.8333C10.0535 33.8333 3.3335 27.1133 3.3335 18.8333C3.3335 10.5533 10.0535 3.83325 18.3335 3.83325C26.6135 3.83325 33.3335 10.5533 33.3335 18.8333C33.3383 22.2366 32.1805 25.5395 30.0518 28.1949ZM26.7085 26.9583C28.8237 24.7831 30.0049 21.8673 30.0002 18.8333C30.0002 12.3866 24.7785 7.16659 18.3335 7.16659C11.8868 7.16659 6.66683 12.3866 6.66683 18.8333C6.66683 25.2783 11.8868 30.4999 18.3335 30.4999C21.3675 30.5047 24.2833 29.3234 26.4585 27.2083L26.7085 26.9583Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_28076_78">
+                  <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <h4 class="m-0 fs-lg fw-500 line-height-123 pt-25">Latest work</h4>
+                <h6 class="m-0 fs-sm line-height-150 fw-400 pt-18">UI/UX Design</h6>              
+              </div>
+            </div>
+            <div class="position-relative template-hover">
+              <img src=".//assets/image/Image(9).png" alt="image" class="w-100 " >
+              <div class="template text-white  position-absolute d-flex flex-column justify-content-end align-items-center pb-47 cursor-pointer">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_28076_79)">
+                  <path d="M30.0518 28.1949L37.1902 35.3316L34.8318 37.6899L27.6952 30.5516C25.0397 32.6803 21.7368 33.8381 18.3335 33.8333C10.0535 33.8333 3.3335 27.1133 3.3335 18.8333C3.3335 10.5533 10.0535 3.83325 18.3335 3.83325C26.6135 3.83325 33.3335 10.5533 33.3335 18.8333C33.3383 22.2366 32.1805 25.5395 30.0518 28.1949ZM26.7085 26.9583C28.8237 24.7831 30.0049 21.8673 30.0002 18.8333C30.0002 12.3866 24.7785 7.16659 18.3335 7.16659C11.8868 7.16659 6.66683 12.3866 6.66683 18.8333C6.66683 25.2783 11.8868 30.4999 18.3335 30.4999C21.3675 30.5047 24.2833 29.3234 26.4585 27.2083L26.7085 26.9583Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_28076_79">
+                  <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <h4 class="m-0 fs-lg fw-500 line-height-123 pt-25">Latest work</h4>
+                <h6 class="m-0 fs-sm line-height-150 fw-400 pt-18">UI/UX Design</h6>              
+              </div>
+            </div>                                   
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="position-relative template-hover mb-30">
+              <img src=".//assets/image/Image(7).png" alt="image" class="w-100 " >
+              <div class="template text-white  position-absolute d-flex flex-column justify-content-end align-items-center pb-47 cursor-pointer">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_28076_80)">
+                  <path d="M30.0518 28.1949L37.1902 35.3316L34.8318 37.6899L27.6952 30.5516C25.0397 32.6803 21.7368 33.8381 18.3335 33.8333C10.0535 33.8333 3.3335 27.1133 3.3335 18.8333C3.3335 10.5533 10.0535 3.83325 18.3335 3.83325C26.6135 3.83325 33.3335 10.5533 33.3335 18.8333C33.3383 22.2366 32.1805 25.5395 30.0518 28.1949ZM26.7085 26.9583C28.8237 24.7831 30.0049 21.8673 30.0002 18.8333C30.0002 12.3866 24.7785 7.16659 18.3335 7.16659C11.8868 7.16659 6.66683 12.3866 6.66683 18.8333C6.66683 25.2783 11.8868 30.4999 18.3335 30.4999C21.3675 30.5047 24.2833 29.3234 26.4585 27.2083L26.7085 26.9583Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_28076_80">
+                  <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <h4 class="m-0 fs-lg fw-500 line-height-123 pt-25">Latest work</h4>
+                <h6 class="m-0 fs-sm line-height-150 fw-400 pt-18">UI/UX Design</h6>              
+              </div>
+            </div>
+            <div class="position-relative template-hover">
+              <img src=".//assets/image/Image(10).png" alt="image" class="w-100 " >
+              <div class="template text-white  position-absolute d-flex flex-column justify-content-end align-items-center pb-47 cursor-pointer">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_28076_81)">
+                  <path d="M30.0518 28.1949L37.1902 35.3316L34.8318 37.6899L27.6952 30.5516C25.0397 32.6803 21.7368 33.8381 18.3335 33.8333C10.0535 33.8333 3.3335 27.1133 3.3335 18.8333C3.3335 10.5533 10.0535 3.83325 18.3335 3.83325C26.6135 3.83325 33.3335 10.5533 33.3335 18.8333C33.3383 22.2366 32.1805 25.5395 30.0518 28.1949ZM26.7085 26.9583C28.8237 24.7831 30.0049 21.8673 30.0002 18.8333C30.0002 12.3866 24.7785 7.16659 18.3335 7.16659C11.8868 7.16659 6.66683 12.3866 6.66683 18.8333C6.66683 25.2783 11.8868 30.4999 18.3335 30.4999C21.3675 30.5047 24.2833 29.3234 26.4585 27.2083L26.7085 26.9583Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_28076_81">
+                  <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <h4 class="m-0 fs-lg fw-500 line-height-123 pt-25">Latest work</h4>
+                <h6 class="m-0 fs-sm line-height-150 fw-400 pt-18">UI/UX Design</h6>              
+              </div>
+            </div>                                   
+          </div>
+        </div> 
+      </div>
+    </section>            
+    <section class="f-f-rubik bg-orange-background overflow-hidden">
+      <div class="container">
+        <div  class="d-flex flex-column  align-items-center pt-lg-60 pt-50">
+          <h6 class="m-0 fs-sm fw-400 line-height-150 color-gray">Clients Feedback</h6>
+          <h2 class="m-0 fs-2xl fw-600 line-height-123 max-w-460 text-center pt-lg-25 pt-18">Some <span class="color-orange">
+            Great Words</span>From Our Clients</h2>
+        </div>
+          <div class="slick-cards slick-cards-1 text-white pt-lg-60 pb-125 pt-18">
+            <div class="slick-card max-w-470 bg-orange position-relative my-sm-95 my-19">
+              <div class="position-absolute profile-img ">
+                <img src="./assets/image/Profile.svg" alt="image" class="w-40">
+              </div>
+              <div class="d-flex flex-column">
+                <h4 class="m-0 fw-500 line-height-123 fs-lg">Justin Septimus</h4>
+                <h6 class="m-0 pt-2 fs-sm line-height-150 fw-400">CEO,word yt</h6>
+              </div>
+              <p class="m-0 pt-23 fw-400 line-height-150 fs-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing.   </p>
+            </div>  
+            <div class="slick-card max-w-470 bg-orange position-relative my-sm-95 my-19">
+              <div class="position-absolute profile-img">
+                <img src="./assets/image/Image(5).svg" alt="image" class="w-40" >
+              </div>
+              <div class="d-flex flex-column">
+                <h4 class="m-0 fw-500 line-height-123 fs-lg">Ashlynn Gouse</h4>
+                <h6 class="m-0 pt-2 fs-sm line-height-150 fw-400">Managing Director</h6>
+              </div>
+              <p class="m-0 pt-23 fw-400 line-height-150 fs-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing.</p>
+            </div> 
+            <div class="slick-card max-w-470 bg-orange position-relative my-sm-95 my-19">
+              <div class="position-absolute profile-img">
+                <img src="./assets/image/Profile.svg" alt="image" class="w-40" >
+              </div>
+              <div class="d-flex flex-column">
+                <h4 class="m-0 fw-500 line-height-123 fs-lg">Justin Septimus</h4>
+                <h6 class="m-0 pt-2 fs-sm line-height-150 fw-400">CEO,word yt</h6>
+              </div>
+              <p class="m-0 pt-23 fw-400 line-height-150 fs-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing.</p>
+            </div>  
+            <div class="slick-card max-w-470 bg-orange position-relative my-sm-95 my-19">
+              <div class="position-absolute profile-img">
+                <img src="./assets/image/Image(5).svg" alt="image" class="w-40">
+              </div>
+              <div class="d-flex flex-column">
+                <h4 class="m-0 fw-500 line-height-123 fs-lg">Ashlynn Gouse</h4>
+                <h6 class="m-0 pt-2 fs-sm line-height-150 fw-400">Managing Director</h6>
+              </div>
+              <p class="m-0 pt-23 fw-400 line-height-150 fs-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing.</p>
+            </div>       
+          </div> 
+      </div>
+    </section>     
+    <section class="f-f-rubik overflow-hidden">
+      <div class="container ">
+        <div class="pt-120 d-flex flex-column align-items-center pb-sm-60 pb-18">
+          <h6 class="m-0 fs-sm fw-400 line-height-150 color-gray pt-lg-120 pt-50">Our Blog</h6>
+          <h2 class="m-0 fw-600 line-height-123 fs-2xl pt-sm-25 pt-18 max-w-542 text-center">Our Latest<span class="color-orange">
+            Blogs Will Keep</span>Everyone Updated</h2>          
+        </div> 
+        <div class="slick-cards  slick-cards-2">
+          <div class="slick-card-2 box-shadow  max-w-570 d-flex  flex-column my-15 h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="d-flex flex-column">
+                <h6 class="m-0 color-orange fs-sm line-height-150 fw-400 d-inline-block">Graphic Design </h6>
+                <h4 class="m-0 line-height-123 fw-500 fs-lg pt-18 max-w-308 max-w-170">35 Stellar Graphic
+                  Design Blogs to Keep You
+                  Educated and Inspired</h4>              
+              </div>
+                <img src="./assets/image/Image(1).svg" alt="image" class="w-78">
+            </div>               
+              <div class="d-flex gap-10 align-items-center pt-29">
+                <img src="./assets/image/Profile(4).svg" alt="image" class="w-40">
+                <div class="d-flex flex-column">
+                  <h5 class="m-0 fw-500 line-height-123 fs-md text-nowrap">Cristofer Westervelt</h5>
+                  <h6 class="m-0 pt-6 line-height-150 fw-400 fs-sm  color-gray d-flex gap-10 align-items-center text-nowrap">January 25, 2021<svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                    <circle cx="2.5" cy="3" r="2.5" fill="#7B7B7B"/>
+                  </svg> 5 min Read</h6>
+                </div>
+              </div> 
+          </div>
+          <div class="slick-card-2 box-shadow  max-w-570 d-flex  flex-column my-15 h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="d-flex flex-column">
+                <h6 class="m-0 color-orange fs-sm line-height-150 fw-400 d-inline-block">Managing Director</h6>
+                <h4 class="m-0 line-height-123 fw-500 fs-lg pt-18 max-w-308 max-w-170">Ridiculously powerful
+                  2021 iPad Pro may drop this month</h4>              
+              </div>
+                <img src="./assets/image/Image(2).svg" alt="image" class="w-78">
+            </div>               
+              <div class="d-flex gap-10 align-items-center pt-29">
+                <img src="./assets/image/Profile(5).svg" alt="image" class="w-40">
+                <div class="d-flex flex-column">
+                  <h5 class="m-0 fw-500 line-height-123 fs-md text-nowrap">Haylie Mango</h5>
+                  <h6 class="m-0 pt-6 line-height-150 fw-400 fs-sm  color-gray d-flex gap-10 align-items-center text-nowrap">January 25, 2021<svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                    <circle cx="2.5" cy="3" r="2.5" fill="#7B7B7B"/>
+                  </svg> 5 min Read</h6>
+                </div>
+              </div> 
+          </div>
+          <div class="slick-card-2 box-shadow  max-w-570 d-flex  flex-column my-15 h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="d-flex flex-column">
+                <h6 class="m-0 color-orange fs-sm line-height-150 fw-400 d-inline-block">Graphic Design </h6>
+                <h4 class="m-0 line-height-123 fw-500 fs-lg pt-18 max-w-308 max-w-170">35 Stellar Graphic
+                  Design Blogs to Keep You Educated and Inspired</h4>              
+              </div>
+                <img src="./assets/image/Image(1).svg" alt="image" class="w-78">
+            </div>               
+              <div class="d-flex gap-10 align-items-center pt-29">
+                <img src="./assets/image/Profile(4).svg" alt="image" class="w-40">
+                <div class="d-flex flex-column">
+                  <h5 class="m-0 fw-500 line-height-123 fs-md text-nowrap">Cristofer Westervelt</h5>
+                  <h6 class="m-0 pt-6 line-height-150 fw-400 fs-sm  color-gray d-flex gap-10 align-items-center text-nowrap">January 25, 2021<svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                    <circle cx="2.5" cy="3" r="2.5" fill="#7B7B7B"/>
+                  </svg>5 min Read</h6>
+                </div>
+              </div> 
+          </div>
+          <div class="slick-card-2 box-shadow  max-w-570 d-flex  flex-column my-15 h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="d-flex flex-column">
+                <h6 class="m-0 color-orange fs-sm line-height-150 fw-400 d-inline-block">Managing Director</h6>
+                <h4 class="m-0 line-height-123 fw-500 fs-lg pt-18 max-w-308 max-w-170">Ridiculously powerful
+                  2021 iPad Pro may drop this month</h4>              
+              </div>
+                <img src="./assets/image/Image(2).svg" alt="image" class="w-78">
+            </div>               
+              <div class="d-flex gap-10 align-items-center pt-29">
+                <img src="./assets/image/Profile(5).svg" alt="image" class="w-40">
+                <div class="d-flex flex-column">
+                  <h5 class="m-0 fw-500 line-height-123 fs-md text-nowrap">Haylie Mango</h5>
+                  <h6 class="m-0 pt-6 line-height-150 fw-400 fs-sm  color-gray d-flex gap-10 align-items-center text-nowrap">January 25, 2021<svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                    <circle cx="2.5" cy="3" r="2.5" fill="#7B7B7B"/>
+                  </svg> 5 min Read</h6>
+                </div>
+              </div> 
+          </div>          
+        </div> 
+        <div class="d-flex flex-column align-items-center mt-150">
+          <h6 class="m-0 fs-sm line-height-150 fw-400 color-gray pt-lg-120">Contact Us</h6>
+          <h2 class="m-0 fw-600 line-height-123 fs-2xl max-w-367 text-center pt-25">Feel<span class="color-orange">Free to Contact</span>With Us</h2>
+        </div>
+        <div class="row pt-60">
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="box-shadow box-3 h-100 hover-shadow cursor-pointer">
+              <div class="d-flex gap-18">
+                <div class="svg-icon  bg-orange d-flex justify-content-center align-items-center rounded-circle">
+                  <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6.5H30C31.65 6.5 33 7.85 33 9.5V27.5C33 29.15 31.65 30.5 30 30.5H6C4.35 30.5 3 29.15 3 27.5V9.5C3 7.85 4.35 6.5 6 6.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M33 9.5L18 20L3 9.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                <div class="d-flex flex-column">
+                  <h4 class="m-0 fs-lg color-orange fw-500 line-height-123">Drop a line</h4>
+                  <h3 class="m-0 line-height-123 fw-600 fs-xl pt-11">Mail Us</h3>
+                </div>
+              </div>
+              <h5 class="m-0 fs-md line-height-123 fw-500 color-gray pt-38">Support87@gmial.com</h5>
+              <h5 class="m-0 fs-md line-height-123 fw-500 color-gray pt-18">ijkuiu874@gmial.com</h5>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="box-shadow box-3 h-100 hover-shadow cursor-pointer">
+              <div class="d-flex gap-18">
+                <div class="svg-icon d-flex justify-content-center align-items-center rounded-circle bg-orange">
+                  <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5751 8C24.0402 8.28585 25.3867 9.00239 26.4422 10.0579C27.4978 11.1134 28.2143 12.4599 28.5001 13.925L22.5751 8ZM22.5751 2C25.6191 2.33815 28.4575 3.70126 30.6245 5.86551C32.7915 8.02976 34.1582 10.8665 34.5001 13.91L22.5751 2ZM33.0001 25.88V30.38C33.0018 30.7978 32.9163 31.2113 32.7489 31.594C32.5816 31.9768 32.3361 32.3204 32.0283 32.6028C31.7204 32.8852 31.357 33.1002 30.9613 33.2341C30.5655 33.3679 30.1462 33.4176 29.7301 33.38C25.1144 32.8785 20.6806 31.3012 16.7851 28.775C13.1609 26.472 10.0881 23.3993 7.78514 19.775C5.25011 15.8618 3.67251 11.4065 3.18014 6.77C3.14266 6.3552 3.19196 5.93714 3.32489 5.54244C3.45783 5.14773 3.6715 4.78503 3.95229 4.47743C4.23309 4.16983 4.57485 3.92406 4.95583 3.75578C5.33681 3.5875 5.74865 3.50039 6.16514 3.5H10.6651C11.3931 3.49284 12.0988 3.75062 12.6508 4.2253C13.2027 4.69998 13.5633 5.35917 13.6651 6.08C13.8551 7.5201 14.2073 8.93409 14.7151 10.295C14.917 10.8319 14.9606 11.4154 14.841 11.9763C14.7214 12.5373 14.4434 13.0522 14.0401 13.46L12.1351 15.365C14.2705 19.1203 17.3798 22.2297 21.1351 24.365L23.0401 22.46C23.448 22.0567 23.9629 21.7788 24.5238 21.6591C25.0848 21.5395 25.6683 21.5832 26.2051 21.785C27.5661 22.2928 28.98 22.6451 30.4201 22.835C31.1488 22.9378 31.8142 23.3048 32.2899 23.8662C32.7656 24.4277 33.0184 25.1444 33.0001 25.88Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                <div class="d-flex flex-column">
+                  <h4 class="m-0 color-orange fs-lg fw-500 line-height-123 ">24/7 Service</h4>
+                  <h3 class="m-0 fw-600 line-height-123 fs-xl pt-11">Call Us</h3>
+                </div>
+              </div>
+              <div class="d-flex gap-18">
+                <h5 class="m-0 color-gray line-height-123 fs-md fw-500 pt-36">+880 265 98745 <span class="color-orange">(Toll free)</span>   </h5>
+              </div>
+              <h5 class="m-0 color-gray line-height-123 fs-md fw-500 pt-20">+895 855 85589</h5>
+            </div>
+          </div> 
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="box-shadow box-3 h-100 hover-shadow cursor-pointer">
+              <div class="d-flex gap-18">
+                <div class="svg-icon d-flex justify-content-center align-items-center bg-orange rounded-circle">
+                  <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.5 15.5C31.5 26 18 35 18 35C18 35 4.5 26 4.5 15.5C4.5 11.9196 5.92232 8.4858 8.45406 5.95406C10.9858 3.42232 14.4196 2 18 2C21.5804 2 25.0142 3.42232 27.5459 5.95406C30.0777 8.4858 31.5 11.9196 31.5 15.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 20C20.4853 20 22.5 17.9853 22.5 15.5C22.5 13.0147 20.4853 11 18 11C15.5147 11 13.5 13.0147 13.5 15.5C13.5 17.9853 15.5147 20 18 20Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                <div class="d-flex flex-column">
+                  <h4 class="m-0 color-orange fw-500 line-height-123 fs-lg ">Location</h4>
+                  <h3 class="m-0 fw-600 line-height-123 fs-xl pt-11">Visit Us</h3>
+                </div>                
+              </div>
+              <h5 class="max-w-198 m-0 line-height-123 fw-500 fs-md color-gray pt-36">158 ralegih sit,
+                houston, yk 5896,uk</h5>
+            </div>
+          </div> 
+        </div>
+        <div class="row pt-60">
+          <div class="col-12 col-lg-5">
+            <img src="./assets/image/Image(11).png" alt="image" class="w-100">
+          </div>
+          <div class="col-12 col-lg-7 ">
+            <div class="d-flex align-items-center flex-column pt-50 text-sm-start pt-sm-0">
+              <h5 class="m-0 line-height-123 fw-600 fs-2xl max-w-180 text-center">Send Your <span class="color-orange ">Message To Us</span></h5>
+            </div>
+            <form  class="pt-18 ">
+              <div class="row">
+                <div class="col-md-6 col-12 px-2">
+                  <input type="text" class="w-100 box-shadow p-3 border-0 outline-none" placeholder="Name ">
+                </div>
+                <div class="col-md-6 col-12 px-2 pt-18 pt-md-0">
+                <input type="email" class="w-100 box-shadow p-3 border-0 outline-none " placeholder="Email ">
+                </div>
+              </div>
+              <div class="row pt-18">
+                <div class="col-md-6 col-12 px-2">
+                  <input type="number" class="w-100 box-shadow p-3 border-0 outline-none" placeholder="Mobile No">
+                </div>
+                <div class="col-md-6 col-12 px-2 pt-18 pt-md-0">
+                  <input type="text" class="w-100 box-shadow p-3 border-0 outline-none " placeholder="Subject">
+                </div>
+              </div>
+              <div class="w-100 pt-29">
+                <textarea class="w-100 box-shadow p-3 border-0 outline-none" placeholder="Send Massage" ></textarea>
+              </div>
+            </form>
+            <button class="btn-1 border-0 bg-orange line-height-123 fw-500 fs-md text-white border-radius-5 accordion mt-29 btn-hover">Send Massage</button>
+          </div>
+        </div>
+        <div class="live-map pt-60 d-flex align-items-center">          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90734.50921981424!2d75.67876221000289!3d29.161144039883098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391232d8011d0c37%3A0x1d3f0df105af1178!2sHisar%2C%20Haryana!5e0!3m2!1sen!2sin!4v1701078325974!5m2!1sen!2sin"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+        </div>
+        <div class="row py-lg-125 py-sm-120 py-50">
+          <div class="col-3 text-start ">
+            <img src="./assets/image/Frame1.svg" alt="fram-image" class="max-w-213 w-100">
+          </div>
+          <div class="col-3 text-center ">
+            <img src="./assets/image/Frame2.svg" alt="fram-image" class="max-w-223 w-100">
+          </div>
+          <div class="col-3 text-center ">
+            <img src="./assets/image/Frame3.svg" alt="fram-image" class="max-w-160 w-100">
+          </div>
+          <div class="col-3 text-end ">
+            <img src="./assets/image/Frame4.svg" alt="fram-image" class="max-w-213 w-100">
+          </div>
+        </div>
+      </div>
+    </section>       
+    <footer class="footer-gray f-f-rubik color-white ">
+      <div class="container">
+        <div class="row pt-lg-66">
+          <div class="col-12 col-sm-6 col-lg-3 pt-50 pt-lg-0">
+            <div class="fw-600 line-height-123 fs-2xl "><span class="color-orange">Digie</span><span class="">ncu</span></div>       
+            <h6 class="color-white fs-sm fw-400 line-height-150 max-w-263 pt-25 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum.</h6>
+            <div class="d-flex gap-27 pt-18">
+              <div class="social-media-icon bg-white d-flex justify-content-center align-items-center">
+                <a href=" https://www.facebook.com/" target="_blank">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_27931_403)">
+                    <path d="M14 14H16.5L17.5 10H14V8C14 6.97 14 6 16 6H17.5V2.64C17.174 2.597 15.943 2.5 14.643 2.5C11.928 2.5 10 4.157 10 7.2V10H7V14H10V22.5H14V14Z" fill="#FF5300"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_27931_406">
+                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>                  
+              </div>
+              <div class="social-media-icon bg-white d-flex justify-content-center align-items-center">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.5C14.717 2.5 15.056 2.51 16.122 2.56C17.187 2.61 17.912 2.777 18.55 3.025C19.21 3.279 19.766 3.623 20.322 4.178C20.8305 4.6779 21.224 5.28259 21.475 5.95C21.722 6.587 21.89 7.313 21.94 8.378C21.987 9.444 22 9.783 22 12.5C22 15.217 21.99 15.556 21.94 16.622C21.89 17.687 21.722 18.412 21.475 19.05C21.2247 19.7178 20.8311 20.3226 20.322 20.822C19.822 21.3303 19.2173 21.7238 18.55 21.975C17.913 22.222 17.187 22.39 16.122 22.44C15.056 22.487 14.717 22.5 12 22.5C9.283 22.5 8.944 22.49 7.878 22.44C6.813 22.39 6.088 22.222 5.45 21.975C4.78233 21.7245 4.17753 21.3309 3.678 20.822C3.16941 20.3222 2.77593 19.7175 2.525 19.05C2.277 18.413 2.11 17.687 2.06 16.622C2.013 15.556 2 15.217 2 12.5C2 9.783 2.01 9.444 2.06 8.378C2.11 7.312 2.277 6.588 2.525 5.95C2.77524 5.28218 3.1688 4.67732 3.678 4.178C4.17767 3.66923 4.78243 3.27573 5.45 3.025C6.088 2.777 6.812 2.61 7.878 2.56C8.944 2.513 9.283 2.5 12 2.5ZM12 7.5C10.6739 7.5 9.40215 8.02678 8.46447 8.96447C7.52678 9.90215 7 11.1739 7 12.5C7 13.8261 7.52678 15.0979 8.46447 16.0355C9.40215 16.9732 10.6739 17.5 12 17.5C13.3261 17.5 14.5979 16.9732 15.5355 16.0355C16.4732 15.0979 17 13.8261 17 12.5C17 11.1739 16.4732 9.90215 15.5355 8.96447C14.5979 8.02678 13.3261 7.5 12 7.5ZM18.5 7.25C18.5 6.91848 18.3683 6.60054 18.1339 6.36612C17.8995 6.1317 17.5815 6 17.25 6C16.9185 6 16.6005 6.1317 16.3661 6.36612C16.1317 6.60054 16 6.91848 16 7.25C16 7.58152 16.1317 7.89946 16.3661 8.13388C16.6005 8.3683 16.9185 8.5 17.25 8.5C17.5815 8.5 17.8995 8.3683 18.1339 8.13388C18.3683 7.89946 18.5 7.58152 18.5 7.25ZM12 9.5C12.7956 9.5 13.5587 9.81607 14.1213 10.3787C14.6839 10.9413 15 11.7044 15 12.5C15 13.2956 14.6839 14.0587 14.1213 14.6213C13.5587 15.1839 12.7956 15.5 12 15.5C11.2044 15.5 10.4413 15.1839 9.87868 14.6213C9.31607 14.0587 9 13.2956 9 12.5C9 11.7044 9.31607 10.9413 9.87868 10.3787C10.4413 9.81607 11.2044 9.5 12 9.5Z" fill="#FF5300"/>
+                    </svg>
+                </a>                  
+              </div>
+              <div class="social-media-icon bg-white d-flex justify-content-center align-items-center">
+                <a href="https://about.twitter.com/en" target="_blank">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_27931_646)">
+                    <path d="M22.1618 6.15605C21.3984 6.49374 20.5888 6.71552 19.7598 6.81405C20.6336 6.29148 21.2875 5.46906 21.5998 4.50005C20.7798 4.98805 19.8808 5.33005 18.9438 5.51505C18.3144 4.84163 17.4802 4.39501 16.5708 4.24463C15.6614 4.09425 14.7277 4.24854 13.9151 4.6835C13.1024 5.11846 12.4562 5.80973 12.0769 6.64984C11.6976 7.48995 11.6066 8.43183 11.8178 9.32905C10.1549 9.2457 8.52814 8.81357 7.0431 8.06071C5.55805 7.30785 4.24794 6.2511 3.19781 4.95905C2.8261 5.5975 2.63076 6.32328 2.63181 7.06205C2.63181 8.51205 3.36981 9.79305 4.49181 10.543C3.82782 10.5221 3.17844 10.3428 2.59781 10.02V10.072C2.59801 11.0377 2.93218 11.9737 3.54366 12.7211C4.15513 13.4686 5.00629 13.9815 5.95281 14.173C5.33642 14.3401 4.69012 14.3647 4.06281 14.245C4.32968 15.0763 4.84982 15.8032 5.5504 16.3242C6.25099 16.8451 7.09694 17.1338 7.96981 17.15C7.10229 17.8314 6.10899 18.335 5.04669 18.6322C3.98439 18.9294 2.87394 19.0143 1.77881 18.882C3.69051 20.1115 5.9159 20.7642 8.18881 20.762C15.8818 20.762 20.0888 14.389 20.0888 8.86205C20.0888 8.68205 20.0838 8.50005 20.0758 8.32205C20.8947 7.73022 21.6014 6.99707 22.1628 6.15705L22.1618 6.15605Z" fill="#FF5300"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_27931_671">
+                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>                  
+              </div>
+              <div class="social-media-icon bg-white d-flex justify-content-center align-items-center">
+                <a href="https://www.slido.com/" target="_blank">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.3102 20.9C11.9879 21.1066 10.6355 20.998 9.36308 20.5831C8.09069 20.1681 6.93425 19.4586 5.98791 18.5123C5.04156 17.5659 4.33205 16.4095 3.91713 15.1371C3.50221 13.8647 3.39361 12.5123 3.60016 11.19C3.07889 10.1985 2.88841 9.06632 3.05657 7.95885C3.22472 6.85138 3.74269 5.82672 4.53477 5.03464C5.32684 4.24257 6.3515 3.7246 7.45897 3.55644C8.56644 3.38829 9.69867 3.57877 10.6902 4.10004C12.0125 3.89348 13.3648 4.00209 14.6372 4.41701C15.9096 4.83193 17.0661 5.54144 18.0124 6.48779C18.9588 7.43413 19.6683 8.59057 20.0832 9.86296C20.4981 11.1353 20.6067 12.4877 20.4002 13.81C20.9214 14.8015 21.1119 15.9337 20.9437 17.0412C20.7756 18.1487 20.2576 19.1734 19.4655 19.9654C18.6735 20.7575 17.6488 21.2755 16.5413 21.4436C15.4339 21.6118 14.3016 21.4213 13.3102 20.9ZM12.0522 17.656H12.0122C14.8842 17.656 16.3152 16.27 16.3152 14.413C16.3152 13.215 15.7642 11.942 13.5892 11.455L11.6062 11.015C10.8512 10.843 9.98416 10.615 9.98416 9.90003C9.98416 9.18503 10.6042 8.68704 11.7082 8.68704C13.9382 8.68704 13.7352 10.215 14.8392 10.215C15.4152 10.215 15.9322 9.87303 15.9322 9.28504C15.9322 7.91504 13.7352 6.88504 11.8762 6.88504C9.85516 6.88504 7.70316 7.74404 7.70316 10.029C7.70316 11.127 8.09716 12.299 10.2632 12.842L12.9522 13.513C13.7682 13.715 13.9702 14.172 13.9702 14.585C13.9702 15.272 13.2862 15.943 12.0522 15.943C9.63516 15.943 9.97416 14.086 8.67816 14.086C8.09816 14.086 7.67516 14.484 7.67516 15.057C7.67516 16.171 9.02716 17.655 12.0522 17.655V17.656Z" fill="#FF5300"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 pt-50 pt-lg-0">
+            <h2 class="fw-600 line-height-123 fs-2xl m-0 pb-25">Company</h2>
+            <ul class="m-0 p-0 d-flex flex-column gap-10">
+              <li><a href="#" class="">About Us</a></li>
+              <li><a href="#">Our Work</a></li>
+              <li><a href="#">Client</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Contact US</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 pt-50 pt-lg-0">
+            <h2 class="fw-600 line-height-123 fs-2xl m-0 pb-25">Sevices</h2>
+            <ul class="m-0 p-0 d-flex flex-column gap-10">
+              <li><a href="#" class="">Graphic Design</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">Web Hosting</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 pt-50 pt-lg-0">
+            <h2 class="fw-600 line-height-123 fs-2xl m-0 ">Newsletter</h2>
+            <p class="max-w-263 fw-400 fs-sm line-height-150 m-0 pt-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget varius viverra in.</p>
+            <div class="mt-25  d-flex border-1-orange">
+              <input type="email" placeholder="info@gmail.com" class="fs-sm color-gray fw-400 line-height-150 p-3 w-100 bg-transparent border-0 outline-none">
+              <button class="bg-orange border-0 btn-2">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2_3754)">
+                <path d="M1.94584 9.81504C1.42384 9.64104 1.41884 9.36004 1.95584 9.18104L21.0428 2.81904C21.5718 2.64304 21.8748 2.93904 21.7268 3.45704L16.2728 22.543C16.1228 23.072 15.8178 23.09 15.5938 22.588L11.9998 14.5L17.9998 6.50004L9.99984 12.5L1.94584 9.81504Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_2_3754">
+                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </button>
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="bg-orange mt-60 text-center text-lg-start">
+        <div class="container">
+          <div class="bottom-line d-flex gap-18 bg-orange pt-18 pb-18">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2_3740)">
+              <path d="M12 2.5C17.52 2.5 22 6.98 22 12.5C22 18.02 17.52 22.5 12 22.5C6.48 22.5 2 18.02 2 12.5C2 6.98 6.48 2.5 12 2.5ZM12 4.5C7.58 4.5 4 8.08 4 12.5C4 16.92 7.58 20.5 12 20.5C16.42 20.5 20 16.92 20 12.5C20 8.08 16.42 4.5 12 4.5ZM12 7.5C13.82 7.5 15.413 8.473 16.288 9.928L14.574 10.957C14.3043 10.5072 13.9213 10.1361 13.4634 9.88045C13.0055 9.62484 12.4885 9.49374 11.9641 9.50023C11.4397 9.50672 10.9262 9.65056 10.4747 9.91742C10.0232 10.1843 9.6496 10.5648 9.39107 11.0211C9.13254 11.4774 8.99815 11.9935 9.00128 12.5179C9.00442 13.0424 9.14498 13.5568 9.40895 14.01C9.67292 14.4632 10.0511 14.8392 10.5057 15.1007C10.9603 15.3621 11.4756 15.4998 12 15.5C12.5181 15.5003 13.0275 15.3664 13.4785 15.1112C13.9294 14.856 14.3065 14.4883 14.573 14.044L16.288 15.072C15.726 16.0106 14.8716 16.739 13.8559 17.1453C12.8402 17.5517 11.7192 17.6137 10.6649 17.3217C9.61058 17.0298 8.68114 16.4 8.01914 15.529C7.35713 14.6581 6.99912 13.594 7 12.5C7 9.74 9.24 7.5 12 7.5Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_2_3740">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+              </clipPath>
+              </defs>
+              </svg>              
+            <h6 class="my-0 fs-sm fw-400 line-height-150 ">Copyright 2021. All Right Reserved By Ojjomedia</h6>
+          </div>
+          <button onclick="topFunction()" id="myBtn" title="Go to top" class="bg-orange border-0 p-1 cursor-pointer">
+            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2_3743)">
+            <path d="M27.0835 25.5V42.1667H22.9168V25.5H8.3335L25.0002 8.83337L41.6668 25.5H27.0835Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_2_3743">
+            <rect width="50" height="50" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </button>
+        </div>
+      </div>
+    </footer>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
