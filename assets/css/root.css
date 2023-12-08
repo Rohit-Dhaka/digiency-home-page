@@ -1,11 +1,14 @@
 :root{
     --orange-background: #FFF7F4;
     --orange: #FF5300;
+    --bg-orange: #FF5300;
     --black: #373737;
     --blue:#00ACFF;
     --white: #fff;
+    --bgwhite: #fff;
     --gray-paragraph:#7B7B7B;
     --footer-gray:#373737;
+    
 
     --fs-sm:16px;
     --fs-md:18px;
@@ -14,6 +17,18 @@
     --fs-2xl:25px;    
     --fs-3xl:31px; 
 }
+
+[data-dark-mode]{
+    --orange-background: black;
+    --orange: white;
+    --bg-orange:rgb(28, 28, 28);
+    --black: white;
+    --blue: black ;
+    --white: black;
+    --bgwhite: rgb(28, 28, 28);
+    --gray-paragraph: white;
+    --footer-gray:black;
+} 
 /* ---------------font-size------------------------- */
 .fs-sm{
     font-size: var(--fs-sm);
@@ -51,13 +66,13 @@
     color: var(--orange);
 }
 .bg-orange{
-    background: var(--orange);
+    background: var(--bg-orange);
 }
 .color-black{
     color: var(--black);
 }
-.bg-white{
-    background: var(--white);
+.Bg-white{
+    background: var(--bgwhite) !important;
 }
 .color-white{
     color: var(--white);

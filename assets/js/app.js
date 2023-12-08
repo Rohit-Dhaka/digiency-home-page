@@ -1,9 +1,7 @@
 // --------nav-bar
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
-
 hamburger.addEventListener("click", mobileMenu);
-
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -58,7 +56,6 @@ function topFunction() {
 }
 
 // -----------dark-mode
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
+document.querySelector('#dark-mode-toggle').addEventListener('click', function() {
+  document.querySelector('html').toggleAttribute('data-dark-mode')
+}) 
