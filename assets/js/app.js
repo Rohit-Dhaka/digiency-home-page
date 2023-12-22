@@ -4,6 +4,7 @@ const navMenu = document.querySelector(".menu");
 hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
+    document.body.classList.toggle('overflow-hidden');
     navMenu.classList.toggle("active");
 }
 // -------slick-slider
@@ -13,7 +14,7 @@ $('.slick-cards').slick({
     speed: 900,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay:true,    
+    // autoplay:true,    
     responsive: [
       {
         breakpoint: 1024,
